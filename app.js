@@ -8,7 +8,7 @@ cartInfo.addEventListener("click", function(){
 })
 })();
 
-// add items to the cart
+/* add items to the cart
 (function(){
 const cartBtn = document.querySelectorAll(".store-item-icon");
 
@@ -93,4 +93,4 @@ document.querySelector('.item-total').textContent = finalMoney;
 document.getElementById('item-count').textContent = total.length;
 
 }
-})();
+})();*/

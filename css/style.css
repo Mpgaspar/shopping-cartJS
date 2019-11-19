@@ -1,0 +1,21 @@
+html, body{
+    margin: 5px;
+    padding: 5px;
+ }
+
+.cart {
+    position: absolute;
+    min-height: 10rem;
+    background: var(--mainWhite);
+    top: 5;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    background: white;
+    width: 0;
+    overflow: hidden;
+  }
+  .show-cart {
+    width: 20rem;
+    padding: 2rem 1.5rem;
+    transform: rotateY(-360deg);
+  }

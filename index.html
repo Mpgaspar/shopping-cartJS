@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 <body> 
  
   <nav>
@@ -19,101 +21,154 @@
         </ul>
       </div>
   </nav>
-<br><br>
+  <br>
 
+  <!--Cart info-->
+  <div id="cart-info" class="right-align">
+      <div class="right-align"><i class="medium material-icons">add_shopping_cart</i></div>
+      <span class="cart-info__icon"><i class="fas fa-shopping-cart"></i></span>
+      <p><span id="item-count">2 </span> items - $<span class="item-total">10.50</span></p>
+    </div>
+  
+ 
+  <!--Cart-->
+  <div id="cart" class="cart">
+      <!-- cart item -->
+      <div class="cart-item right-align">
+        <img src="assets/quilha02.jpg" width="30" id="item-img" alt="">
+        <div class="item-text">
+
+          <p id="cart-item-title" class="blue-text">cart item</p>
+          <span>$</span>
+          <span id="cart-item-price" class="cart-item-price">10.99</span>
+        </div>
+        <a href="#" id='cart-item-remove' class="cart-item-remove">
+          <i class="fas fa-trash"></i>
+        </a>
+      </div>
+      <!--end of  cart item -->
+      <!-- cart item -->
+      <div class=" cart-item right-align">
+        <img src="assets/board05.jpg" width="30" class="img-fluid rounded-circle" id="item-img" alt="">
+        <div class="cart-item-text">
+
+          <p id="cart-item-title" class="blue-text">cart item</p>
+          <span>$</span>
+          <span id="cart-item-price" class="cart-item-price" class="mb-0">10.99</span>
+        </div>
+        <a href="#" id='cart-item-remove' class="cart-item-remove">
+          <i class="fas fa-trash"></i>
+        </a>
+      </div>
+      <!--end of  cart item -->
+      <!-- cart total -->
+      <div class="cart-total-container right-align">
+        <h5>total</h5>
+        <h5> $ <strong id="cart-total" class="blue-text">10.00</strong> </h5>
+      </div>
+      <!--end cart total -->
+      <!-- cart buttons -->
+      <div class="cart-buttons-container right-align">
+        <a href="#" id="clear-cart" class="btn text-uppercase">clear cart</a>
+        <a href="#" class="btn text-uppercase ">checkout</a>
+      </div>
+      <!--end of  cart buttons -->
+  </div>
+
+<h3 class="center-align">Our Products</h3>
 <!--Store Items-->
-  <section class="container">
+  <section>
     <!--Boards-->  
     <div class="row" >
-          <div class="col s12 m4 l4"><img src="assets/board01.jpg" alt="image-item01">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board01.jpg" alt="image-item01" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/board02.jpg" alt="image-item02"> 
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board02.jpg" alt="image-item02" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div> 
           </div>
-          <div class="col s12 m4 l4"><img src="assets/board03.jpg" alt="image-item03">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board03.jpg" alt="image-item03" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
      </div>
       <div class="row" >
-          <div class="col s12 m4 l4"><img src="assets/board04.jpg" alt="image-item04">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board04.jpg" alt="image-item04" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/board05.jpg" alt="image-item05">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board05.jpg" alt="image-item05" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/board06.png" alt="image-item06">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board06.png" alt="image-item06" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
       </div>
 
 
       <div class="row" >
-          <div class="col s12 m4 l4"><img src="assets/quilha01.jpg" alt="image-item07">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha01.jpg" alt="image-item07" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/quilha02.jpg" alt="image-item08"> 
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha02.jpg" alt="image-item08" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div> 
           </div>
-          <div class="col s12 m4 l4"><img src="assets/quilha03.jpeg" alt="image-item09">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha03.jpeg" alt="image-item09"width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
      </div>
 
      <!--Quilhas-->
       <div class="row" >
-          <div class="col s12 m4 l4"><img src="assets/quilha04.jpg" alt="image-item10">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha04.jpg" alt="image-item10" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/quilha05.jpg" alt="image-item11">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha05.jpg" alt="image-item11" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/quilha06.jpg" alt="image-item12">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha06.jpg" alt="image-item12" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
       </div>
 
       <!--Shorts-->
       <div class="row" >
-          <div class="col s12 m4 l4"><img src="assets/shorts01.jpg" alt="image-item13">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts01.jpg" alt="image-item13" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/shorts02.jpg" alt="image-item14"> 
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts02.jpg" alt="image-item14" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div> 
           </div>
-          <div class="col s12 m4 l4"><img src="assets/shorts03.png" alt="image-item15">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts03.png" alt="image-item15" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
      </div>
       <div class="row" >
-          <div class="col s12 m4 l4"><img src="assets/shorts04.jpg" alt="image-item16">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts04.jpg" alt="image-item16" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/shorts05.jpg" alt="image-item17">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts05.jpg" alt="image-item17" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/shorts06.jpg" alt="image-item18">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts06.jpg" alt="image-item18" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
       </div>
 
       <!--Decks-->
       <div class="row" >
-          <div class="col s12 m4 l4"><img src="assets/deck01.jpg" alt="image-item19">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck01.jpg" alt="image-item19" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/deck02.jpg" alt="image-item20">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck02.jpg" alt="image-item20" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/deck03.jpeg" alt="image-item21">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck03.jpeg" alt="image-item21" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
       </div>
       <div class="row" >
-          <div class="col s12 m4 l4"><img src="assets/deck04.png" alt="image-item22">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck04.png" alt="image-item22" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/deck05.jpg" alt="image-item23">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck05.jpg" alt="image-item23" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/deck06.jpg" alt="image-item24">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck06.jpg" alt="image-item24" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
       </div>
 
       <!--T-Shirt-->
       <div class="row" >
-          <div class="col s12 m4 l4"><img src="assets/tshirt01.jpg" alt="image-item25">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt01.jpg" alt="image-item25" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/tshirt02.png" alt="image-item26">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt02.png" alt="image-item26" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/tshirt03.jpg" alt="image-item27">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt03.jpg" alt="image-item27" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
       </div>
       <div class="row" >
-          <div class="col s12 m4 l4"><img src="assets/tshirt04.jpg" alt="image-item28">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt04.jpg" alt="image-item28" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/tshirt05.jpg" alt="image-item29">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt05.jpg" alt="image-item29" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4"><img src="assets/tshirt06.jpg" alt="image-item30">
+          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt06.jpg" alt="image-item30" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-      </div>
+        </div>
 </section>
 
   <footer>
