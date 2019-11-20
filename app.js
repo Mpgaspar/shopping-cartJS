@@ -68,6 +68,31 @@
       alert('item added to the cart');
       showTotals();
        }
+       
+    //Put data in localStorage
+       const item = document.getElementById('store-item-name');
+       const price = document.querySelector('.store-item-value');
+       const color = document.getElementById('cColor');
+       const qtd = document.getElementById('cQtd');
+       
+       var data = JSON.parse(localStorage.getItem("datauser"));
+     
+       if(data == null) {
+           localStorage.setItem("datauser","[]")
+           data = [];
+       }
+     
+       var register = {
+           name: item.textContent,
+           price: price.textContent,
+           color: color.value,
+           quantity: qtd.value
+            
+       }
+     
+       data.push(register);
+       localStorage.setItem("datauser", JSON.stringify(data))
+
       });
   });
   

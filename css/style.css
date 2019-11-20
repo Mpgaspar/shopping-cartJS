@@ -6,11 +6,11 @@ html, body{
 .cart {
     position: absolute;
     min-height: 10rem;
-    background: var(--mainWhite);
     top: 5;
     right: 0;
     transition: all 0.3s ease-in-out;
     background: white;
+    text-align: right;
     width: 0;
     overflow: hidden;
   }
@@ -18,4 +18,8 @@ html, body{
     width: 20rem;
     padding: 2rem 1.5rem;
     transform: rotateY(-360deg);
+  }
+
+  .pointer {
+    cursor: pointer;
   }

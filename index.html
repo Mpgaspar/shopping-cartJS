@@ -25,10 +25,9 @@
 
   <!--Cart info-->
   <div id="cart-info" class="right-align">
-      <div class="right-align"><i class="medium material-icons">add_shopping_cart</i></div>
-      <span class="cart-info__icon"><i class="fas fa-shopping-cart"></i></span>
+      <div class="right-align"><i class="medium material-icons pointer">add_shopping_cart</i></div>
       <p><span id="item-count">2 </span> items - $<span class="item-total">10.50</span></p>
-    </div>
+  </div>
   
  
   <!--Cart-->
@@ -95,18 +94,23 @@
               <div class="img-container">
                 <img src="assets/board01.jpg" class="store-img" alt="">
                 <span class="store-item-icon">
-                    <i class="small material-icons">add_shopping_cart</i>
+                    <i class="small material-icons pointer">add_shopping_cart</i>
                 </span>
               </div>
               <div class="card-body">
                 <div class="card-text">
                   <h5 id="store-item-name">board item</h5>
                   <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-  
+                  <!--<p><label for="cCor">Color:</label><input type="color" name="tColor" id="cColor"/> </p>-->
+                  <input id="cColor" type="color" list="presetColors">
+              <datalist id="presetColors">
+                <option>#000000</option>/>
+                <option>#FFFFFF</option>
+                <option>#2277AA</option>
+              </datalist>
+                  <p><label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/> </p>
                 </div>
               </div>
-  
-  
             </div>      
       
       
@@ -232,6 +236,7 @@
         </div>
       </div>
   </footer>
-<script src="app.js"></script>        
+<script src="app.js"></script> 
+<script src="localStorage.js"></script>       
 </body>
 </html>
