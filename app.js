@@ -7,6 +7,17 @@
      cart.classList.toggle("show-cart"); 
   })
   })();
+
+  // show item
+  (function(){
+    const carditem = document.querySelector(".card-item");
+    const item = document.querySelector(".item");
+    
+    carditem.addEventListener("click", function(){
+       item.classList.toggle("show-item"); 
+    })
+    })();
+
   
   // add items to the cart
   (function(){
@@ -38,13 +49,13 @@
           //console.log(item);
   
           const cartItem = document.createElement('div');
-          cartItem.classList.add(
+          /*cartItem.classList.add(
               'cart-item',
               'd-flex',
               'justify-content-between',
               'text-capitalize',
               'my-3'
-              );
+              );*/
           
           cartItem.innerHTML =`
           <div class="cart-item d-flex justify-content-between text-capitalize my-3">
@@ -60,6 +71,37 @@
             </a>
           </div>
           `;
+
+
+         /* const cartItem = document.createElement('div');
+          cartItem.classList.add(
+              'item'
+              );
+          
+          cartItem.innerHTML =`
+          <div class="item">
+          <div class="img-container">
+            <img src="assets/board04.jpg" class="store-img" alt="">
+            <span class="store-item-icon">
+                <i class="small material-icons pointer">add_shopping_cart</i>
+            </span>
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h5 id="store-item-name">board item</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price">5</strong></h5>
+              <input id="cColor" type="color" list="presetColors"><br>
+          <datalist id="presetColors">
+            <option>#000000</option>/>
+            <option>#FFFFFF</option>
+            <option>#2277AA</option>
+          </datalist>
+              <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0" onclick="changePrice()"/>
+            </div>
+          </div>
+        </div> 
+          `;*/  
+
       // select cart
       const cart = document.getElementById('cart');
       const total = document.querySelector('.cart-total-container');
