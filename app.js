@@ -9,24 +9,23 @@
   })();
 
   // show item
-  (function(){
+  /*(function(){
     const card = document.querySelector(".card-item");
     const item = document.querySelector(".item");
     
        card.addEventListener("click", function(){
        item.classList.toggle("show-item"); 
     })
-    })();
+    })();*/
 
-  /*(function(){
     const cardList = document.querySelectorAll(".card-item");
     const itemList = document.querySelectorAll(".item");
 
     cardList.forEach(function(node, index){
+
       node.addEventListener("click", function(){
       itemList[index].classList.toggle("show-item"); 
      })});
-    });*/
 
 
   
