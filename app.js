@@ -3,20 +3,31 @@
   const cartInfo = document.getElementById("cart-info");
   const cart = document.getElementById("cart");
   
-  cartInfo.addEventListener("click", function(){
+     cartInfo.addEventListener("click", function(){
      cart.classList.toggle("show-cart"); 
   })
   })();
 
   // show item
   (function(){
-    const carditem = document.querySelector(".card-item");
+    const card = document.querySelector(".card-item");
     const item = document.querySelector(".item");
     
-    carditem.addEventListener("click", function(){
+       card.addEventListener("click", function(){
        item.classList.toggle("show-item"); 
     })
     })();
+
+  /*(function(){
+    const cardList = document.querySelectorAll(".card-item");
+    const itemList = document.querySelectorAll(".item");
+
+    cardList.forEach(function(node, index){
+      node.addEventListener("click", function(){
+      itemList[index].classList.toggle("show-item"); 
+     })});
+    });*/
+
 
   
   // add items to the cart
@@ -49,26 +60,17 @@
           //console.log(item);
   
           const cartItem = document.createElement('div');
-          /*cartItem.classList.add(
-              'cart-item',
-              'd-flex',
-              'justify-content-between',
-              'text-capitalize',
-              'my-3'
-              );*/
           
           cartItem.innerHTML =`
-          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
-            <img src="${item.img}" class="img-fluid rounded-circle" id="item-img" alt="">
+          <div class="cart-item left-align">
+            <img src="${item.img}" id="item-img" alt="">
             <div class="cart-item-text">
   
-              <p id="cart-item-title" class="font-weight-bold mb-0">${item.name}</p>
+              <div id="cart-item-title" class="blue-text">${item.name}</div>
               <span>$</span>
-              <span id="cart-item-price" class="cart-item-price" class="mb-0">${item.price}</span>
+              <span id="cart-item-price" class="cart-item-price">${item.price}</span>
             </div>
-            <a href="#" id='cart-item-remove' class="cart-item-remove">
-              <i class="fas fa-trash"></i>
-            </a>
+            
           </div>
           `;
 

@@ -30,47 +30,39 @@
   </div>
   
   <div class="right-align">
-  <div>
-    <input type="radio" id="dollar" name="dollar" value="Dollar"
-           checked>
-    <label for="dollar">Dollar</label>
-  </div>
-  <div>
-    <input type="radio" id="euro" name="euro" value="Euro">
-    <label for="euro">Euro</label>
-  </div>
+    <button class="btn white grey-text" value="Dollar">$ Dollar</button>
+    <button class="btn white grey-text" value="Euro">&#8364 Euro</button>
 </div>
  
   
   <!--Cart-->
   <div id="cart" class="cart">
       <!-- cart item -->
-      <div class="cart-item right-align">
+      <div class="cart-item left-align">
         <img src="cart-assets/quilha02.jpg" id="item-img" alt="">
         <div class="item-text">
-
-          <p id="cart-item-title" class="blue-text">cart item</p>
+          <div id="cart-item-title" class="blue-text">keel FCS</div>
           <span>$</span>
           <span id="cart-item-price" class="cart-item-price">80.00</span>
         </div>
         <a href="#" id='cart-item-remove' class="cart-item-remove">
-          <i class="fas fa-trash"></i>
+          
         </a>
-      </div>
+      </div><br>
       <!--end of  cart item -->
       <!-- cart item -->
-      <div class=" cart-item right-align">
+      <div class=" cart-item left-align">
         <img src="cart-assets/board05.jpg" id="item-img" alt="">
         <div class="cart-item-text">
 
-          <p id="cart-item-title" class="blue-text">cart item</p>
+          <div id="cart-item-title" class="blue-text">DHD board</div>
           <span>$</span>
           <span id="cart-item-price" class="cart-item-price" class="mb-0">200.00</span>
         </div>
         <a href="#" id='cart-item-remove' class="cart-item-remove">
           <i class="fas fa-trash"></i>
         </a>
-      </div>
+      </div><br>
       <!--end of  cart item -->
       <!-- cart total -->
       <div class="cart-total-container right-align">
@@ -88,8 +80,7 @@
   
 <h3 class="center-align">Our Products</h3>
 <div class="row">
-    <div class=" center-align">
-      <a href="#" class="btn text-uppercase" data-filter="all"> all</a>
+    <div class="center-align">
       <a href="#boards" class="btn text-uppercase" data-filter="boards">boards</a>
       <a href="#keels" class="btn text-uppercase" data-filter="keels">keels</a>
       <a href="#shorts" class="btn text-uppercase" data-filter="shorts">shorts</a>
@@ -101,7 +92,28 @@
   <section>
     <!--Boards-->  
     <div id="boards" class="row" >
-            <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board01.jpg" alt="image-item01" width="280"><div class="right-align"><i class="small material-icons pointer">add_shopping_cart</i></div>
+            <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/board01.jpg" alt="image-item01" width="280"><div class="right-align"><i class="small material-icons pointer">add_shopping_cart</i></div>
+            </div>
+            <div class="item">
+              <div class="img-container">
+                <img src="assets/board01.jpg" class="store-img" alt="">
+                <span class="store-item-icon">
+                    <i class="small material-icons pointer">add_shopping_cart</i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 id="store-item-name">board item</h5>
+                  <h5 class="store-item-value">$ <strong id="store-item-price">5</strong></h5>
+                  <input id="cColor" type="color" list="presetColors"><br>
+              <datalist id="presetColors">
+                <option>#000000</option>/>
+                <option>#FFFFFF</option>
+                <option>#2277AA</option>
+              </datalist>
+                  <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0" onclick="changePrice()"/>
+                </div>
+              </div>
             </div>
             <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board02.jpg" alt="image-item02" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
             </div>
