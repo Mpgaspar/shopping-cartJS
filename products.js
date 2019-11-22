@@ -4,14 +4,14 @@ var products = [];
     {img: src="assets/board01.jpg",
     name:"Phantom",
     color: "#2277AA",
-    price: "200",
+    price: "250",
     quantity: "5"},
 
     {img: src="assets/board02.jpg",
     name:"Fire",
     color: "#000000",
     price: "400",
-    quantity: "5"},
+    quantity: "3"},
 
     {img: src="assets/board03.jpg",
     name:"Ghost",

@@ -26,12 +26,12 @@
   <!--Cart info-->
   <div id="cart-info" class="right-align">
       <div class="right-align"><i class="medium material-icons pointer">add_shopping_cart</i></div>
-      <p><span id="item-count">2 </span> items - $<span class="item-total">280.00</span></p>
+      <p><span id="item-count">2 </span> items --<span id="symbol">$</span> <span class="item-total">280.00</span></p>
   </div>
   
   <div class="right-align">
-    <button class="btn white grey-text" value="Dollar">$ Dollar</button>
-    <button class="btn white grey-text" value="Euro">&#8364 Euro</button>
+    <button id="USDbtn" class="btn white grey-text" value="Dollar">$ Dollar</button>
+    <button id="EURbtn" class="btn white grey-text" value="Euro">&#8364 Euro</button>
 </div>
  
   
@@ -103,21 +103,63 @@
               </div>
               <div class="card-body">
                 <div class="card-text">
-                  <h5 id="store-item-name">board item</h5>
-                  <h5 class="store-item-value">$ <strong id="store-item-price">5</strong></h5>
+                  <h5 id="store-item-name">Phantom</h5>
+                  <h5 class="store-item-value">$ <strong id="store-item-price">250</strong></h5>
                   <input id="cColor" type="color" list="presetColors"><br>
               <datalist id="presetColors">
                 <option>#000000</option>/>
                 <option>#FFFFFF</option>
                 <option>#2277AA</option>
               </datalist>
-                  <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0" onclick="changePrice()"/>
+                  <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
                 </div>
               </div>
             </div>
             <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board02.jpg" alt="image-item02" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
             </div>
+            <div class="item">
+              <div class="img-container">
+                <img src="assets/board02.jpg" class="store-img" alt="">
+                <span class="store-item-icon">
+                    <i class="small material-icons pointer">add_shopping_cart</i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 id="store-item-name">Fire</h5>
+                  <h5 class="store-item-value">$ <strong id="store-item-price">400</strong></h5>
+                  <input id="cColor" type="color" list="presetColors"><br>
+              <datalist id="presetColors">
+                <option>#000000</option>/>
+                <option>#FFFFFF</option>
+                <option>#2277AA</option>
+              </datalist>
+                  <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+                </div>
+              </div>
+            </div>
             <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board03.jpg" alt="image-item03" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+            </div>
+            <div class="item">
+              <div class="img-container">
+                <img src="assets/board03.jpg" class="store-img" alt="">
+                <span class="store-item-icon">
+                    <i class="small material-icons pointer">add_shopping_cart</i>
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 id="store-item-name">Ghost</h5>
+                  <h5 class="store-item-value">$ <strong id="store-item-price">300</strong></h5>
+                  <input id="cColor" type="color" list="presetColors"><br>
+              <datalist id="presetColors">
+                <option>#000000</option>/>
+                <option>#FFFFFF</option>
+                <option>#2277AA</option>
+              </datalist>
+                  <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="4" value="1" onclick="changePrice()"/>
+                </div>
+              </div>
             </div>
      </div>
       
@@ -133,15 +175,15 @@
             </div>
             <div class="card-body">
               <div class="card-text">
-                <h5 id="store-item-name">board item</h5>
-                <h5 class="store-item-value">$ <strong id="store-item-price">5</strong></h5>
+                <h5 id="store-item-name">Skull</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">350</strong></h5>
                 <input id="cColor" type="color" list="presetColors"><br>
             <datalist id="presetColors">
               <option>#000000</option>/>
               <option>#FFFFFF</option>
               <option>#2277AA</option>
             </datalist>
-                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0" onclick="changePrice()"/>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="2" value="1" onclick="changePrice()"/>
               </div>
             </div>
           </div> 
@@ -157,24 +199,43 @@
           </div>
           <div class="card-body">
             <div class="card-text">
-              <h5 id="store-item-name">board item</h5>
-              <h5 class="store-item-value">$ <strong id="store-item-price">5</strong></h5>
+              <h5 id="store-item-name">Flash</h5>
+              <h5 class="store-item-value">$ <strong id="store-item-price">500</strong></h5>
               <input id="cColor" type="color" list="presetColors"><br>
           <datalist id="presetColors">
             <option>#000000</option>/>
             <option>#FFFFFF</option>
             <option>#2277AA</option>
           </datalist>
-              <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0" onclick="changePrice()"/>
+              <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
             </div>
           </div>
         </div> 
           <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board06.png" alt="image-item06" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/board06.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">DHD</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">420</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div>
       </div>
     
-    
-
     <!--Keels-->
       <div id="keels" class="row" >
           <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha01.jpg" alt="image-item07" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
@@ -264,6 +325,7 @@
   </footer>
 <script src="app.js"></script> 
 <script src="localStorage.js"></script>
-<script src="price.js"></script>        
+<script src="price.js"></script>
+<script src="conversor.js"></script>        
 </body>
 </html>
