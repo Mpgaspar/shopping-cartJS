@@ -13,7 +13,7 @@
  
   <nav>
       <div class="nav-wrapper black">
-        <a href="#" class="brand-logo" >SurfStore</a>
+        <a href="#" class="brand-logo" >Mahalo</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
@@ -138,7 +138,7 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board03.jpg" alt="image-item03" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+            <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/board03.jpg" alt="image-item03" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
             </div>
             <div class="item">
               <div class="img-container">
@@ -211,11 +211,11 @@
             </div>
           </div>
         </div> 
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/board06.png" alt="image-item06" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/board06.png" alt="image-item06" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
           <div class="item">
             <div class="img-container">
-              <img src="assets/board06.jpg" class="store-img" alt="">
+              <img src="assets/board06.png" class="store-img" alt="">
               <span class="store-item-icon">
                   <i class="small material-icons pointer">add_shopping_cart</i>
               </span>
@@ -238,75 +238,579 @@
     
     <!--Keels-->
       <div id="keels" class="row" >
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha01.jpg" alt="image-item07" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/quilha01.jpg" alt="image-item07" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha02.jpg" alt="image-item08" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div> 
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/quilha01.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">keel1</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">50</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/quilha02.jpg" alt="image-item08" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div> 
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha03.jpeg" alt="image-item09"width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/quilha02.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">keel2</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">70</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/quilha03.jpeg" alt="image-item09"width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/quilha03.jpeg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">keel3</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">80</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
      </div>
 
       <div class="row" >
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha04.jpg" alt="image-item10" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/quilha04.jpg" alt="image-item10" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha05.jpg" alt="image-item11" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/quilha04.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">keel4</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">90</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/quilha05.jpg" alt="image-item11" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/quilha06.jpg" alt="image-item12" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/quilha05.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">keel5</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">100</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/quilha06.jpg" alt="image-item12" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/quilha06.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">keel6</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">65</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
       </div>
 
       <!--Shorts-->
       <div id="shorts" class="row" >
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts01.jpg" alt="image-item13" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/shorts01.jpg" alt="image-item13" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts02.jpg" alt="image-item14" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div> 
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/shorts01.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">shorts01</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">50</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/shorts02.jpg" alt="image-item14" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div> 
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts03.png" alt="image-item15" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/shorts02.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">shorts02</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">55</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/shorts03.png" alt="image-item15" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/shorts03.png" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">shorts03</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">30</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
      </div>
       <div class="row" >
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts04.jpg" alt="image-item16" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/shorts04.jpg" alt="image-item16" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts05.jpg" alt="image-item17" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/shorts04.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">shorts04</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">20</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/shorts05.jpg" alt="image-item17" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/shorts06.jpg" alt="image-item18" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/shorts05.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">shorts05</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">20</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/shorts06.jpg" alt="image-item18" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/shorts06.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">shorts06</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">83</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
       </div>
 
       <!--Decks-->
       <div id="decks" class="row" >
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck01.jpg" alt="image-item19" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/deck01.jpg" alt="image-item19" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck02.jpg" alt="image-item20" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/deck01.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">deck01</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">60</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/deck02.jpg" alt="image-item20" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck03.jpeg" alt="image-item21" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/deck02.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">deck02</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">70</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/deck03.jpeg" alt="image-item21" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/deck03.jpeg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">deck03</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">80</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
       </div>
       <div class="row" >
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck04.png" alt="image-item22" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/deck04.png" alt="image-item22" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck05.jpg" alt="image-item23" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/deck04.png" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">deck04</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">90</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/deck05.jpg" alt="image-item23" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/deck06.jpg" alt="image-item24" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/deck05.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">deck05</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">40</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/deck06.jpg" alt="image-item24" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/deck06.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">deck06</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">45</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="4" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
       </div>
 
       <!--T-Shirt-->
       <div id="t-shirts" class="row" >
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt01.jpg" alt="image-item25" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/tshirt01.jpg" alt="image-item25" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt02.png" alt="image-item26" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/tshirt01.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">tshirt01</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">30</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/tshirt02.png" alt="image-item26" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt03.jpg" alt="image-item27" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/tshirt02.png" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">tshirt02</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">40</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/tshirt03.jpg" alt="image-item27" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/tshirt03.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">tshirt03</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">50</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="3" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
       </div>
       <div class="row" >
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt04.jpg" alt="image-item28" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/tshirt04.jpg" alt="image-item28" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt05.jpg" alt="image-item29" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/tshirt04.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">tshirt04</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">25</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/tshirt05.jpg" alt="image-item29" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
-          <div class="col s12 m4 l4 card-panel hoverable"><img src="assets/tshirt06.jpg" alt="image-item30" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/tshirt05.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">tshirt05</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">30</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
+          <div class="col s12 m4 l4 card-panel hoverable card-item"><img src="assets/tshirt06.jpg" alt="image-item30" width="280"><div class="right-align"><i class="small material-icons">add_shopping_cart</i></div>
           </div>
+          <div class="item">
+            <div class="img-container">
+              <img src="assets/tshirt06.jpg" class="store-img" alt="">
+              <span class="store-item-icon">
+                  <i class="small material-icons pointer">add_shopping_cart</i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h5 id="store-item-name">tshirt06</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price">25</strong></h5>
+                <input id="cColor" type="color" list="presetColors"><br>
+            <datalist id="presetColors">
+              <option>#000000</option>/>
+              <option>#FFFFFF</option>
+              <option>#2277AA</option>
+            </datalist>
+                <label for="cQtd">Quantity:</label><input type="number" name="tQtd" id="cQtd" min="1" max="5" value="1" onclick="changePrice()"/>
+              </div>
+            </div>
+          </div> 
         </div>
 </section>
 
@@ -323,9 +827,8 @@
         </div>
       </div>
   </footer>
-<script src="app.js"></script> 
-<script src="localStorage.js"></script>
+<script src="app.js"></script>
 <script src="price.js"></script>
-<script src="conversor.js"></script>        
+<script src="converter.js"></script>        
 </body>
 </html>

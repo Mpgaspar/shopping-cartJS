@@ -18,6 +18,7 @@
     })
     })();*/
 
+    // show item
     const cardList = document.querySelectorAll(".card-item");
     const itemList = document.querySelectorAll(".item");
 
